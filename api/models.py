@@ -7,6 +7,7 @@ class Product(models.Model):
   stock = models.IntegerField()
 
 class Order(models.Model):
+  id = models.BigAutoField(primary_key=True)
   date_time = models.DateTimeField(auto_now=True)
 
 class OrderDetail(models.Model):
